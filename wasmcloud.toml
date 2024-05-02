@@ -1,0 +1,10 @@
+name = "http-hello-world"
+version = "0.1.0"
+language = "rust"
+type = "component"
+
+[component]
+wit_world = "hello"
+wasm_target = "wasm32-wasi-preview2"
+build_command = "cargo auditable build --target wasm32-wasi"
+build_artifact = "target/wasm32-wasi/debug/http_hello_world.wasm"
